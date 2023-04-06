@@ -1,0 +1,34 @@
+.containerNoise {
+    background-image: url("../../../../assets/Noise.png");
+    opacity: 0.8;
+
+    .bg {
+        background: linear-gradient(233.82deg, #FFFCF0 11.75%, #FCF5D9 37.21%, #FFFFFD 66.39%, #E3D495 121.03%);
+        width: 100vw;
+        height: 100vh;
+
+
+
+        .firstCircle {
+            position: fixed;
+            left: 20.17%;
+            right: -14.68%;
+            top: -93.49%;
+            bottom: 67.93%;
+
+            background: radial-gradient(50% 50% at 50% 50%, #F67A7C 0%, rgba(246, 122, 124, 0) 100%);
+        }
+
+        .secondCircle {
+            position: fixed;
+
+            left: -19.31%;
+            right: 14.62%;
+            top: 19.25%;
+            bottom: -66.7%;
+
+            background: radial-gradient(50% 50% at 50% 50%, #BB8CE1 0%, rgba(187, 140, 225, 0) 100%);
+            opacity: 0.5;
+        }
+    }
+}

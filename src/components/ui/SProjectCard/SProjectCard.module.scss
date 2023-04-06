@@ -1,0 +1,44 @@
+@use 'sass:map';
+
+@import '../../../styles/variables.scss';
+
+.container {
+	margin-top: 64px;
+	vertical-align: middle;
+	width: fit-content;
+
+	&__img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.projectInfo {
+		display: flex;
+		align-items: center;
+		margin-top: 8px;
+
+		&__name {
+			font-size: 2.4rem;
+			font-weight: 500;
+			color: #ffffff;
+			margin-inline-end: 2.4rem;
+		}
+
+		&__category {
+			font-size: 2rem;
+			font-weight: 400;
+			color: #ffffff;
+		}
+	}
+}
+
+@media (max-width: map.get($sizes, main-mobile-width)) {
+	.container {
+		max-width: map.get($sizes, main-mobile-width);
+		margin-top: 8px;
+
+		.projectInfo {
+			display: none;
+		}
+	}
+}
